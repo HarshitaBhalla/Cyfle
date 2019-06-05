@@ -101,11 +101,11 @@ html{
 }
 
 .slideshow-text {
-	position: relative;
+	position: absolute;
     margin-top:25%;
     margin-left:50%;
 	transform: translate(-50%, -50%);
-	z-index: 2;
+	z-index: 100;
 	font-size: 50px;
 	width: 100vw;
 	text-align: center;
@@ -120,12 +120,13 @@ html{
 
 @media (max-width: 767px) {
 	.slideshow-text {
-		font-size: 40px;
+	    font-size: 25px;
 		margin-top:50%;
 		margin-left:50%;
+		letter-spacing: 5px;
 	}
 	.slideshow {
-		height:auto;
-		width:auto;
+	width: 100vw;
+	height: 90vh;
 	}
 }
