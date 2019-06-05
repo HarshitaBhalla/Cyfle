@@ -13,7 +13,6 @@ html{
 .slideshow .slider {
 	width: 100vw;
 	height: 100vh;
-
 }
 
 .slideshow .slider * {
@@ -123,5 +122,9 @@ html{
 		font-size: 40px;
 		margin-top:50%;
 		margin-left:50%;
+	}
+	.slideshow {
+		height:auto;
+		width:auto;
 	}
 }
