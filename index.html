@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>SplitScreenVerticalSlider</title>
+    <title>Cyfle</title>
     <link href="css\main.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet">
@@ -36,6 +36,47 @@
  width:100%;
  height:25em;
 }
+#iconimage{
+height:30px;
+width:30px;
+}
+.img-wrapper {
+  position: relative;
+  top:30%;
+ }
+ .img-wrapperr {
+  position: relative;
+  top:30%;
+ }
+
+.img-overlay {
+  position: absolute;
+  top: 40%;
+  bottom: 7%;
+  left: 5em;
+  right: 70%;
+  height:150px;
+  width:150px;
+  text-align: center;
+  z-index:100;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  top:20%;
+}
+
+.img-responsive {
+  width: auto;
+  height: auto;
+}
+#sett{
+height:5px;
+width:5px;
+}
+
 
  </style>
  <script>
@@ -82,15 +123,27 @@
     </div>
   </div>
 </nav>
+	<!-----navigation bar ends here----->
 <div class="container-fluid">
         <div class="split-slideshow">
                 <div class="slideshow">
                   <div class="slider">
                     <div class="item">
-                      <img src="img\o.jpg" />
+					<div class="img-wrapper">
+    <img class="img-responsive" src="img\o.jpg">
+    <div class="img-overlay">
+      <img  src="img\youworkicon.png" class="img-responsive" style="border:2px solid white; border-radius:50%"/>
+    </div>
+</div>
+                     <!-- <img src="img\o.jpg" />-->
                     </div>
+					<div class="img-wrapperr">
                     <div class="item">
-                      <img src="img\white.jpg" />
+                      <img class="img-responsive" src="img\white.jpg" />
+					  <div class="img-overlay">
+      <img  src="img\wepayicon.png" class="img-responsive" style="border:2px solid white; border-radius:50%"/>
+    </div>
+	   </div>
                     </div>
                   </div>
                 </div>
@@ -102,6 +155,7 @@
 			  </div>
 			  <div id="hel">
 			  </div>
+	<!---Enter content after this for using section below the slider------>
 
  <!--First Jquery then split.js-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
