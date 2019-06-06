@@ -129,4 +129,7 @@ html{
 	width: 100vw;
 	height: 90vh;
 	}
+	.img-overlay {
+visibility:hidden;
+}
 }
