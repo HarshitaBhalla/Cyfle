@@ -109,6 +109,30 @@
  
 /* end */ 
 
+/*buttons in dashboard*/
+.btn1, .btn2, .btn3, .btn4
+{
+  background-color:rgb(71, 71, 71);
+  color:white;
+  padding: 20px;
+  text-align:center;
+  font-size: 130%;
+  padding-right: 80px;
+  padding-left: 80px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition-duration: 0.2s;
+  translate: (10px,0px)
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover{
+  background-color: rgb(26, 24, 24);
+  color:white;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+/*end*/
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
