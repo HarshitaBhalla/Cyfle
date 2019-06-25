@@ -33,6 +33,35 @@
 	.i:hover{
 		font-size: 250%;
 	}
+
+	div.gallery {
+  margin-left: 10%;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 20%;
+  transition-duration: 0.2s;
+  border-radius:8px;
+}
+
+div.gallery:hover {
+  box-shadow:2px 2px 5px #141414;
+  transform: scale(1.1);
+}
+
+div.gallery img {
+  width: 60%;
+  height: auto;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 15%;
+}
+
+div.desc {
+    padding: 10px;
+  text-align: center;
+  color: black;
+}
 </style>
 
   </head>
@@ -49,8 +78,8 @@
 			  <li class="nav-item"><a href="#" class="nav-link"><span>Home</span></a></li>
 			  <li class="nav-item"><a href="#" class="nav-link"><span>Page</span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link"><span>About us</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link"><span><i class="fa fa-sign-in"></i>&nbsp &nbsp Sign in</span></a></li>
-	          <li class="nav-item"><a href="login.html" class="nav-link"><span  style="color: black;"><i class="fa fa-user-circle-o"></i>&nbsp &nbsp Login</span></a></li>
+	          <li class="nav-item"><a href="#" class="nav-link"><span><i class="fa fa-sign-in"></i> &nbsp Sign in</span></a></li>
+	          <li class="nav-item"><a href="login.html" class="nav-link"><span  style="color: black;"><i class="fa fa-user-circle-o"></i> &nbsp Login</span></a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -111,7 +140,9 @@
 	        </div>
 	      </div>
 	    </div>
-    </section>	
+	</section>	
+	
+
 	<section class="ftco-section ftco-services-2" id="services-section">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
@@ -193,6 +224,62 @@
 		</div>      
 	  </div>
 		</div>
+	</section>
+
+	
+	<section class="ftco-section ftco-services-2" id="services-section">
+
+			<div class="container" style="background-color: whitesmoke;">
+			<div class="row">
+        <div class="gallery">
+                <a target="_blank" href="#">
+                  <img src="img/comp.png" alt="Cinque Terre" width="600" height="400">
+                <div class="desc">Web, mobile and software developmet</div>
+            </a>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="#">
+                  <img src="img/bulb.png" alt="Forest" width="600" height="400">
+                <div class="desc">Design and create</div>
+            </a>
+              </div>
+
+              <div class="gallery">
+                    <a target="_blank" href="#">
+                      <img src="img/writing.png" alt="Cinque Terre" width="600" height="400">
+                    <div class="desc">Writing</div>
+                </a>
+                  </div>
+				</div>
+				<div class="row"> 
+                  <div class="gallery">
+                    <a target="_blank" href="#">
+                      <img src="img/sales.png" alt="Forest" width="600" height="400">
+                    <div class="desc">Sales and marketing</div>
+                </a>
+                  </div>
+
+                  <div class="gallery">
+                        <a target="_blank" href="#">
+                          <img src="img/analytics.png" alt="Cinque Terre" width="600" height="400">
+                        <div class="desc">Data science and Analytics</div>
+                    </a>
+                      </div>
+                      
+                      <div class="gallery">
+                        <a target="_blank" href="#">
+                          <img src="img/architecture.png" alt="Forest" width="600" height="400">
+                        <div class="desc">Engineering and architecture</div>
+                    </a>
+                      </div>
+					</div>
+                    
+			
+								</div>
+
+		
+
 	</section>
 
 	<section class="ftco-section contact-section ftco-no-pb" id="contact-section" style="background-color: orange">
