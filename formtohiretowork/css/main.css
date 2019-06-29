@@ -290,10 +290,12 @@ h6 {
 
 .btn--orange {
   background: #ff9800;
+   color: orange;
 }
 
 .btn--orange:hover {
   background: #ff9800;
+   color: white;
 }
 
 /* ==========================================================================
