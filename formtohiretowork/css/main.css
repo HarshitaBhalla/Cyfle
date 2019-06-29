@@ -170,19 +170,19 @@ h6 {
 }
 
 .bg-gra-01 {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
-  background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
-  background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
-  background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
-  background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffa500), to(#ffffff));
+  background: -webkit-linear-gradient(bottom, #ffa500 0%, #ffffff 100%);
+  background: -moz-linear-gradient(bottom, #ffa500 0%, #ffffff 100%);
+  background: -o-linear-gradient(bottom, #ffa500 0%, #ffffff 100%);
+  background: linear-gradient(to top, #ffa500 0%, #ffffff 100%);
 }
 
 .bg-gra-02 {
-  background: -webkit-gradient(linear, left bottom, right top, from(#fc2c77), to(#6c4079));
-  background: -webkit-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
-  background: -moz-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
-  background: -o-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
-  background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+  background: -webkit-gradient(linear, left bottom, right top, from(#ff8c00), to(#ffffff));
+  background: -webkit-linear-gradient(bottom left, #ff8c00 0%, #ffffff 100%);
+  background: -moz-linear-gradient(bottom left, #ff8c00 0%, #ffffff 100%);
+  background: -o-linear-gradient(bottom left, #ff8c00 0%, #ffffff 100%);
+  background: linear-gradient(to top right, #ff8c00 0%, #ffffff 100%);
 }
 
 /* ==========================================================================
@@ -248,6 +248,8 @@ h6 {
    ========================================================================== */
 .btn {
   display: inline-block;
+   border:2px solid black;
+   
   line-height: 50px;
   padding: 0 50px;
   -webkit-transition: all 0.4s ease;
@@ -286,12 +288,12 @@ h6 {
   background: #4dae3c;
 }
 
-.btn--blue {
-  background: #4272d7;
+.btn--orange {
+  background: #ff9800;
 }
 
-.btn--blue:hover {
-  background: #3868cd;
+.btn--orange:hover {
+  background: #ff9800;
 }
 
 /* ==========================================================================
