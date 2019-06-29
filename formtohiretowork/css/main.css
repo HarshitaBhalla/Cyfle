@@ -291,6 +291,7 @@ h6 {
 .btn--orange {
   border-color: #ff9800;
    color: orange;
+   border-radius: 50px;
 }
 
 .btn--orange:hover {
