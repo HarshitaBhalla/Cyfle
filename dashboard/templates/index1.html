@@ -87,7 +87,7 @@ div.desc {
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Cyfle</a>
+	      <a class="navbar-brand" href="index1.html">Cyfle</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -95,10 +95,10 @@ div.desc {
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
 			  <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-			  <li class="nav-item"><a href="#about" class="nav-link"><span>About Us</span></a></li>
+			  <li class="nav-item"><a href="{% url 'form'%}" class="nav-link"><span>About Us</span></a></li>
 	          <li class="nav-item"><a href="#service-section" class="nav-link"><span>Services</span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link"><span><i class="fa fa-sign-in"></i> &nbsp Sign in</span></a></li>
-			  <li class="nav-item"><a href="login.html" class="nav-link"><span  style="color: black;"><i class="fa fa-user-circle-o"></i> &nbsp Login</span></a></li>
+			  <li class="nav-item"><a href="{% url 'login' %}" class="nav-link"><span  style="color: black;"><i class="fa fa-user-circle-o"></i> &nbsp Login</span></a></li>
 			  <li class="nav-item"><a href="#contact-section" class="nav-link"><span><i class="fa fa-sign-in"></i> &nbsp Contact Us</span></a></li>
 
 	        </ul>
@@ -301,9 +301,6 @@ div.desc {
 				</div>    
 			
 			</div>
-
-		
-
 	</section>
 
 	<section class="ftco-section contact-section ftco-no-pb" id="contact-section" style="background-color: orange">
@@ -380,7 +377,8 @@ div.desc {
 						  </p>
 										  <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
 											  <a href="https://www.facebook.com/pheme.iitj/"><i class="ti-facebook"></i></a>
-										  </div>
+											  <a href="static/formtowork/form.html"> hello</a>
+											</div>
 									  </div>
 								  </div>
 				  </div>
@@ -388,7 +386,7 @@ div.desc {
 		  </div>
 		</div>
 	  </section>
-	  <br><br>
+	  
 
 
   <script src="/static/js/jquery.min.js"></script>
