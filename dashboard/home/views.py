@@ -8,8 +8,3 @@ def index(request):
     return render(request,'index1.html',{'dest1':dest1})
     
 
-def login(request):
-    return render(request,'login.html')
-
-def form(request):
-    return render(request,'form.html')
