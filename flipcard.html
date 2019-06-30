@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flipcard</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+        <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+    
+        <link rel="stylesheet" href="css/aos.css">
+    
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        
+        <link rel="stylesheet" href="css/flaticon.css">
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+<style>
+.card {
+  margin: 10px 10px;
+}
+
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+     <!-- Card 1 --> 
+    <div class="col-md-4 card-container">
+      <div class="card-flip">
+        <!-- Card 1 Front -->
+        <div class="card front">
+                <img src="img/comp.png" alt="Web, mobile and software development" class="card-img-top img-fluid" style="width:70%; height:auto; margin:15%;">
+                <div class="card-block">
+                  <p style="color: gray;margin:3%;text-align:center;">Web, mobile and software development</p>
+                </div>
+              </div>
+        <!-- End Card 1 Front -->
+
+        <!-- Card 1 Back -->
+        <div class="card back">
+                <div class="card-header">Web, mobile and software development
+                    </div>
+          <div class="card-block">
+            <p style="text-align:center;color:gray;margin:3%;">This position is for a walking Wiki of Codes who is passionate for 
+                pushing technologies to the limits. He/She will work with a 
+                team of talented engineers to 
+                design and build the next generation platform 
+                for Cyfle's owned and operated brands.</p>
+
+                <br>
+                <a href="#" class="btn btn-info" style="margin-left: 40%;">Go ></a>
+          </div>
+        </div>
+        <!-- End Card 1 Back -->
+      </div>
+    </div>
+    <!-- End Card 1 -->
+
+    <!-- Card 2 -->
+    <div class="col-md-4 card-container">
+      <div class="card-flip">
+        <!-- Card 2 Front -->
+        <div class="card front">
+          <img src="img/bulb.png" alt="Design and create" class="card-img-top img-fluid" style="width:70%; height:auto; margin:15%;">
+          <div class="card-block">
+            <p style="text-align:center;color:gray;margin:3%;margin">Design and create</p>
+          </div>
+        </div>
+        <!-- End Card 2 Front -->
+
+        <!-- Card 2 Back -->
+        <div class="card back">
+          <div class="card-header">Design and create
+          </div>
+          <div class="card-block">
+           <p style="text-align:center;color:gray;margin:3%;">This position is for creative thinkers 
+            who are dedicated and 
+               passionate about creating and designing, combining creativity 
+               and technological tools to inspire, intrigue and convey the 
+               right message to our clients.
+                If you can communicate well and can work as a part of a team, 
+                we'd like to meet you.</p>
+                <br>
+                <a href="#" class="btn btn-info" style="margin-left: 40%;">Go ></a>
+          </div>
+        </div>
+        <!-- End Card 2 Back -->
+      </div>
+    </div>
+    <!-- End Card 2 -->
+
+    <!-- Card 3 -->
+    <div class="col-md-4 card-container">
+      <div class="card-flip">
+        <!-- Card 3 Front -->
+            <div class="card front">
+                    <img src="img\writing.png" alt="Writing" class="card-img-top img-fluid" style="width:70%; height:auto; margin:15%;">
+                    <div class="card-block">
+                      <p style="text-align:center;color:gray;margin:3%;margin">Design and create</p>
+                    </div>
+                    </div>
+        <!-- End Card 3 Front -->
+
+        <!-- Card 3 Back -->
+        <div class="card back">
+                <div class="card-header">Writing
+                </div>
+                <div class="card-block">
+                 <p style="text-align:center;color:gray;margin:3%;">
+                        As a Content writer, you will be expected to create dynamic and 
+                        engaging content for all our products and services. 
+                        The ideal candidate will be comfortable writing both 
+                        long and short form content for Cyfle's different channels and requirements.
+                         Tasks will range from creating social media posts to writing 
+                         and editing blog posts and 
+                        reviewing all written communication. 
+                  </p>
+                  <br>
+                <a href="#" class="btn btn-info" style="margin-left: 40%;">Go ></a>
+                </div>
+              </div>
+              <!-- End Card 3 Back -->
+            </div>
+          </div>
+    <!-- End Card 3 -->
+
+    <!-- Card 4 -->
+    <div class="col-md-4 card-container">
+      <div class="card-flip">
+        <!-- Card 4 Front -->
+        <div class="card front">
+                <img src="img/sales.png" alt="Sales and marketing" class="card-img-top img-fluid"style="width:70%; height:auto; margin:15%;">
+                <div class="card-block">
+                  <p style="text-align:center;color:gray;margin:3%;">Sales and marketing</p>
+                </div>
+              </div>
+        <!-- End Card 4 Front -->
+
+        <!-- Card 4 Back -->
+        <div class="card back text-center">
+                <div class="card-header">Sales and Marketing
+                    </div>
+          <div class="card-block">
+            <p style="text-align:center;color:gray;margin:3%;overflow:scroll;max-height: 300px;">This position is for a young, energetic, creative yet disciplined, 
+                    social media savvy professional. He/She should be awesome at creating 
+                    written and visual content. You should have a natural curiosity 
+                    to understand topics, target audience, learn tools and 
+                    technologies to deliver content that is engaging on a consistent basis. 
+                    A self-driven, go getter, he/she should have a natural ability to communicate, 
+                    work with people from our community and professionals. You should be able 
+                    to think on your feet, 
+                    energize and spark discussions, create practical plans and most 
+                    importantly execute to deliver 
+                    content on a consistent basis. 
+                    If this sounds exciting to you, we'd like to meet you.</p>
+
+                    <br>
+                <a href="#" class="btn btn-info">Go ></a>
+          </div>
+        </div>
+        <!-- End Card 4 Back -->
+      </div>
+    </div>
+    <!-- End Card 4 -->
+
+    <!-- Card 5 -->
+    <div class="col-md-4 card-container">
+      <div class="card-flip">
+        <!-- Card 5 Front -->
+        <div class="card front">
+                <img  src="img/analytics.png" alt="Data science and Analytics" class="card-img-top img-fluid"style="width:70%; height:auto; margin:15%;">
+                <div class="card-block">
+                  <p style="text-align:center;color:gray;margin:3%;">Data science and Analytics</p>
+                </div>
+              </div>
+        <!-- End Card 5 Front -->
+
+        <!-- Card 5 Back -->
+        <div class="card back">
+                <div class="card-header">Data science and Analytics
+                    </div>
+          <div class="card-block">
+            <p  style="text-align:center;color:gray;margin:3%;overflow:scroll;">This position is responsible for the implementation of 
+                the strategy and the execution of digital marketing 
+                operations with an emphasis on search, and social 
+                advertising for Cyfle owned and operated brands. 
+                He/she will work in conjunction with the Social Media Manager, 
+                Content Creators, Graphics Designers and Web Developers in the 
+                development of traditional and digital media plans and tactics 
+                that will support achieving Cyfle its objectives.</p>
+
+                <br>
+                <a href="#" class="btn btn-info" style="margin-left: 40%;">Go ></a>
+          </div>
+        </div>
+        <!-- End Card 5 Back -->
+      </div>
+    </div>
+    <!-- End Card 5 -->
+
+    <!-- Card 6 -->
+    <div class="col-md-4 card-container">
+      <div class="card-flip">
+        <!-- Card 6 Front -->
+        <div class="card front">
+                <img src="img/architecture.png" alt="Engineering and architecture" class="card-img-top img-fluid" style="width:70%; height:auto; margin:15%;">
+                <div class="card-block">
+                  <p style="text-align:center;color:gray;margin:3%;">Engineering and architecture</p>
+                </div>
+              </div>
+        <!-- End Card 6 Front -->
+
+        <!-- Card 6 Back -->
+        <div class="card back">
+                <div class="card-header">Engineering and architecture
+                    </div>
+          <div class="card-block">
+            <p  style="text-align:center;color:gray;margin:3%;overflow:scroll;max-height: 300px;"> This position is responsible 
+                for the design, implementation 
+                and maintenance of human resources 
+                administration and activities associated with 
+                employee information, retrieval capabilities and support. 
+                He/She must process HR data according to Cyfle’s 
+                policy and legal requirements. He/She will be 
+                responsible for identifying emerging applications
+                 and recommend process improvements and simplification 
+                 that support business and HP strategy. He/She must work across 
+                 the business, functional, and regional 
+                areas of Cyfle’s to recommend IT investments and improvements to 
+                HP tools</p>
+
+                <br>
+                <a href="#" class="btn btn-info" style="margin-left: 40%;">Go ></a>
+          </div>
+        </div>
+        <!-- End Card 6 Back -->
+      </div>
+    </div>
+    <!-- End Card 6 -->
+  </div>
+</div>
+</body>
+</html>
