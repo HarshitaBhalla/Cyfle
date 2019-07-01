@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'dashboard.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'telusko',
+        'NAME': 'cyfle',
         'USER': 'postgres',
-        'PASSWORD': '189198920',
+        'PASSWORD': '1234',
         'HOST': 'localhost'
     }
 }
