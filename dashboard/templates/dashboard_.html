@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+       
+<style>
+
+.button
+    {
+        background-color: rgb(88, 88, 88);
+        padding: 20px;
+        display: inline-block;
+        text-decoration: none;
+        padding-right: 80px;
+        padding-left:80px;
+        transition-duration: 0.2s;
+        border-radius:35px;
+        margin: 10px;
+        color:white;
+    }
+
+    .button:hover
+    {
+        background-color: black;
+        box-shadow: 2px 2px 5px #141414;
+    }
+
+    @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="vnavbar"] {
+    width: 100%;
+  }
+}
+
+.i:hover
+{
+    background-color: rgb(46, 159, 224);
+    color:black;
+}
+.nav-item{
+  transition-duration: 0.2s;
+}
+.nav-item:hover{
+  transform: scale(1.5);
+}
+.x{
+    float: left;
+    background-color: rgb(148, 250, 202);
+    width: 300px; 
+    height:100%;
+    text-align: center;
+    font-size: 130%;
+    margin-right: 10px;
+}
+.x:after {
+  content: "";
+  display: table;
+  clear: both;
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="x"] {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+</style>
+</head>
+<body>
+    
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(46, 159, 224);">
+                <a class="navbar-brand nav-item" href="#"><i class="fas fa-home"></i></a>   
+            <a class="navbar-brand" href="#">WorkWithUs</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav ml-auto" style="text-align: right;">
+                        <li class="nav-item ">
+                                <a class="nav-link" id="i" href="#"><i class="fas fa-bell" style="font-size: 160%; color: white;"></i></a>
+                              </li>
+                              <li class="nav-item" id="i">
+                                <a class="nav-link" id="i" href="#"><i class="fas fa-user"style="font-size: 160%; color: white;"></i></a>
+                              </li>
+                              <li class="nav-item" id="i">
+                                      <a class="nav-link" id="i" href="#"><i class="fas fa-envelope"style="font-size: 160%; color: white;"></i></a>
+                                    </li> 
+                              <li class="nav-item"id="i">
+                                <a class="nav-link" id="i" href="#"><i class="fas fa-cog"style="font-size: 160%; color: white;"></i></a>
+                              </li>    
+                  </ul>
+                </div>  
+              </nav>
+
+        <div class="x">  
+                    <nav class="navbar vnavbar">
+                        <ul class="nav flex-column" style="width:300px;">
+                            <li class="nav-item"><br></li>
+                            <li class="nav-item"><br></li>
+                            <li class="nav-item"><br></li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><span style="color: black;"><i class="fas fa-th"></i>&nbsp&nbsp Dashboard</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><span style="color: black;"><i class="fas fa-comment"></i>&nbsp&nbsp Messages</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><span style="color: black;"><i class="fas fa-inbox"></i>&nbsp&nbsp Notifications</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><span style="color: black;"><i class="fas fa-bullseye"></i>&nbsp&nbsp Review</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><span style="color: black;"><i class="fas fa-briefcase"></i>&nbsp&nbsp Jobs</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><span style="color: black;"><i class="fas fa-user"></i>&nbsp&nbsp&nbsp Account</span></a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link" href="#"><span style="color: black;"><i class="fas fa-wrench"></i>&nbsp&nbsp&nbsp Settings</span></a>
+                          </li>
+                        </ul>  
+                    </nav>
+                  </section>
+                  </div>
+
+<br><br><br><br>
+                  <h1 style="text-align: center;"><i>Hey! Gald to see you again...</i></h1>
+          <br>
+
+            <div  class="col-md-push-6">
+                    <a href="#" ><span class="button"><i class="fas fa-check" style="color: white; font-size: 120%; transform: translateY(4px);"></i>&nbsp JOBS DONE </span></a>
+                    <a href="#" ><span class="button"><i class="fas fa-mail-bulk" style="color: white; font-size: 120%; transform: translateY(4px);"></i>&nbsp POST A NEW JOB</span></a>
+                    <a href="#" ><span class="button"><i class="fas fa-user-plus" style="color: white; font-size: 120%; transform: translateY(4px);"></i>&nbsp JOIN</span></a>
+                    <br>
+                    
+                    <a href="#" ><span class="button"><i class="fas fa-upload" style="color: white; font-size: 120%; transform: translateY(4px);"></i>&nbsp UPLOAD DOCUMENT</span></a>
+                    <a href="#" ><span class="button"><i class="fa fa-chart-pie"  style="color: white; font-size: 120%; transform: translateY(4px);"></i>&nbsp CHECK PROGRESS</span></a>
+                    <a href="#" ><span class="button"><i class="fas fa-th-large" style="color: white; font-size: 120%; transform: translateY(4px);"></i>&nbsp MORE</span></a>
+                  </div>
+           
+            <br>
+
+</body>
+</html>

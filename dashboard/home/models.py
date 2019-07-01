@@ -4,8 +4,8 @@ from django.db import models
 
 class User(models.Model):
     username= models.TextField()
-    name= models.CharField(max_length=20)
-    img= models.ImageField(upload_to='pics')
-    jobsa= models.TextField()
-
-    
+    first_name= models.CharField(max_length=20)
+    last_name= models.CharField(max_length=20)
+    password= models.TextField(max_length=20)
+    email= models.CharField(max_length=30)
+    number=models.TextField
