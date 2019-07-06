@@ -32,7 +32,11 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'home.apps.HomeConfig',
+<<<<<<< HEAD
     'accounts.apps.AccountsConfig',
+=======
+    'accounts.apps.AccountsConfig'
+>>>>>>> 7865764432ea7b582c0156bb24222982d8c9f8a7
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,7 +85,7 @@ DATABASES = {
         'NAME': 'cyfle',
         'USER': 'postgres',
         'PASSWORD': '1234',
-        'HOST': 'localhost'
+        'HOST': 'localhost',
     }
 }
 
