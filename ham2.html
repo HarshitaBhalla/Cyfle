@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<style>
+
+    @charset "UTF-8";
+/**
+ * All the magic here ¯\_(ツ)_/¯
+ * :checked - https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
+ * :not     - https://developer.mozilla.org/en-US/docs/Web/CSS/:not 
+ * 
+ * Feel free to change colors, animation, or easing function on lines 28-33 ❤ =)
+ */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap");
+input {
+  display: none;
+}
+input:not(:checked) ~ div {
+  max-height: 0px;
+  transition-delay: 0s;
+}
+input:not(:checked) ~ span {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+input:checked ~ span {
+  opacity: 1;
+}
+
+/** the rest of the stuff */
+::-moz-selection {
+  background: rgba(245, 245, 245, 0.1);
+}
+::selection {
+  background: rgba(245, 245, 245, 0.1);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  font: 300 13px/2 "Poppins", sans-serfi;
+  background: #4169E1;
+  color: #F5F5F5;
+}
+
+ul {
+  width: 90%;
+  max-width: 500px;
+  border-left: 1px solid rgba(245, 245, 245, 0.1);
+  border-right: 1px solid rgba(245, 245, 245, 0.1);
+}
+ul li {
+  margin-bottom: 2px;
+  position: relative;
+}
+ul li:last-child {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.1);
+}
+
+label {
+  display: block;
+  padding: 20px 40px 20px 20px;
+  background: rgba(245, 245, 245, 0.1);
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+label:hover ~ span {
+  opacity: 1;
+}
+
+div {
+  max-height: 300px;
+  overflow: hidden;
+  transition: max-height 400ms ease;
+  transition-delay: 400ms;
+}
+
+p {
+  padding: 20px;
+  opacity: 0.9;
+}
+
+span {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #F5F5F5;
+  border-right: 2px solid #F5F5F5;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+  opacity: 0.3;
+}
+
+</style>
+       
+</head>
+<body>
+   
+<ul>
+    <li>
+      <input id="uno" type="radio" name="list" checked="checked"/>
+      <label for="uno">Introduction</label><span></span>
+      <div>
+        <p>Today, most techniques for training word embeddings capture the local context of a given word in a sentence as a window containing a relatively small number of words (say, 5) before and after the word in question—“the company it keeps” nearby. For example, the word “self-evident” in the U.S. Declaration of Independence has a local context given by “hold these truths to be” on the left and “that all men are created” on the right.</p>
+      </div>
+    </li>
+    <li>
+      <input id="dos" type="radio" name="list"/>
+      <label for="dos">Word Embeddings</label><span></span>
+      <div>
+        <p>Continuous-space word embeddings trained in an unsupervised manner are useful for a variety of natural language processing (NLP) tasks, like information retrieval, document classification, question answering, and connectionist language modeling. The most elementary embedding is based on 1-of-N encoding, where every word in an underlying vocabulary of size N is represented by a sparse vector of dimension N (with 1 at the index of the word and 0 elsewhere). More complex embeddings map words into dense vectors in a lower-dimensional continuous vector space.</p>
+      </div>
+    </li>
+    <li>
+      <input id="tres" type="radio" name="list"/>
+      <label for="tres">Neural Architecture</label><span></span>
+      <div>
+        <p>One of the most well-known frameworks for creating word embedding is word2vec. Instead, we decided to investigate a neural architecture that could provide global semantic embeddings. We chose a bi-LSTM recurrent neural network (RNN) architecture. This approach allows the model to access information about prior, current, and future input that results in a model able to capture a global context.</p>
+      </div>
+    </li>
+    <li>
+      <input id="cuatro" type="radio" name="list"/>
+      <label for="cuatro">Semantic Word Embeddings</label><span></span>
+      <div>
+        <p>For each word in the underlying vocabulary, the word representation we are looking for is the state of the trained network associated with this word given every text chunk (sentence, paragraph, or document) in which it appears. When the word occurs in only one piece of text, we use the corresponding vector (of dimension 2H) as is. If a word occurs in multiple texts, we average all associated vectors accordingly.</p>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>
