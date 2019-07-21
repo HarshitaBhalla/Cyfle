@@ -276,13 +276,13 @@ input[type=text]:focus {
 	<div class="inputGroup inputGroup1">
 	<br>
 		<label for="loginEmail" id="loginEmailLabel">Email</label><br>
-		<input type="email" id="loginEmail" maxlength="254" placeholder="email" class="myinputfield"></input><br>
+		<input type="username" id="loginEmail" maxlength="254" placeholder="username" class="myinputfield" name="username"></input><br>
 		<br>
 	</div>
 	<div class="inputGroup inputGroup2">
 		
 		<label for="loginPassword" id="loginPasswordLabel">Password</label><br>
-		<input type="password" id="loginPassword" class="myinputfield" />
+		<input type="password" id="loginPassword" class="myinputfield" name="password" />
 		<label id="showPasswordToggle" for="showPasswordCheck">Show
 			<input id="showPasswordCheck" type="checkbox"/>
 			<div class="indicator"></div>
@@ -292,6 +292,13 @@ input[type=text]:focus {
 		<br>
 		<button id="login" class="myloginfield">Log in</button>
 	</div>	
+	<div>
+			{% for message in messages%}
+			<h3>{{message}}</h3>
+			{%endfor%}
+
+
+		</div>
 </form>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>

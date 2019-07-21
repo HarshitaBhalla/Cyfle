@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
+from django.contrib import messages
 # Create your views here.
 
 def register(request):
@@ -13,30 +14,28 @@ def register(request):
         email=request.POST['email']
         if password1==password2:
             if User.objects.filter(username=username).exists():
-                print("Username taken")
+                messages.info(request,'Username Taken')
+                return render(request,'register.html')
             elif User.objects.filter(email=email).exists():
-                print("email_id taken")
+                messages.info(request,'Email Taken')
+                return render(request,'register.html')
             else:
                 user=User.objects.create_user(username=username,first_name=first_name,email=email,password=password1,last_name=last_name)
                 user.save()
-                print('user created')
+                messages.info(request,'User Created')
                 return redirect("/")
         else:
-            print("password not matching!")
+            messages.info(request,'Password not matching!')
     else:
         return render(request,'register.html')
 
 def login(request):
-
     if request.method=='POST':
-        username=request.POST['email']
+        username=request.POST['username']
         password=request.POST['password']
-        
         user=auth.authenticate(username=username,password=password)
         if user is not None:
             auth.login(request,user)
-            return redirect("accounts/dashboard_.html")
-
-
+            return render(request,'dashboard_.html')
     else:
         return render(request,'login.html')
