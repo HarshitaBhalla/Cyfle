@@ -12,6 +12,7 @@ def register(request):
         password1=request.POST['password1']
         password2=request.POST['password2']
         email=request.POST['email']
+        image=request.POST['image']
         if password1==password2:
             if User.objects.filter(username=username).exists():
                 messages.info(request,'Username Taken')
@@ -20,7 +21,7 @@ def register(request):
                 messages.info(request,'Email Taken')
                 return render(request,'register.html')
             else:
-                user=User.objects.create_user(username=username,first_name=first_name,email=email,password=password1,last_name=last_name)
+                user=User.objects.create_user(username=username,first_name=first_name,email=email,password=password1,last_name=last_name,image=image)
                 user.save()
                 messages.info(request,'User Created')
                 return redirect('login')
